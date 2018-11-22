@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1 class="text-center">{{title}}</h1>
+    <table class="table table-bordered text-center">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        {% for i in result %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}
